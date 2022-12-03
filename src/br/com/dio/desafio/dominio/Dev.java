@@ -13,7 +13,7 @@ public class Dev {
     }
 
     public void progredir() {
-        Optional<Conteudo> conteudo = this.conteudosInscritos.stream().findFirst();
+        Optional<Conteudo> conteudo = this.conteudosInscritos.stream().findFirst();//optional para resolver retornos nulos
         if(conteudo.isPresent()) {
             this.conteudosConcluidos.add(conteudo.get());
             this.conteudosInscritos.remove(conteudo.get());
@@ -62,7 +62,6 @@ public class Dev {
         this.conteudosConcluidos = conteudosConcluidos;
     }
 
-    @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
@@ -70,7 +69,6 @@ public class Dev {
         return Objects.equals(nome, dev.nome) && Objects.equals(conteudosInscritos, dev.conteudosInscritos) && Objects.equals(conteudosConcluidos, dev.conteudosConcluidos);
     }
 
-    @Override
     public int hashCode() {
         return Objects.hash(nome, conteudosInscritos, conteudosConcluidos);
     }

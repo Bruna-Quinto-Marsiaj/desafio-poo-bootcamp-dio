@@ -8,13 +8,13 @@ import java.time.LocalDate;
 public class Main {
     public static void main(String[] args) {
         Curso curso1 = new Curso();
-        curso1.setTitulo("curso java");
-        curso1.setDescricao("descrição curso java");
+        curso1.setTitulo("Prepare-se para a jornada");
+        curso1.setDescricao("Onboarding");
         curso1.setCargaHoraria(8);
 
         Curso curso2 = new Curso();
-        curso2.setTitulo("curso js");
-        curso2.setDescricao("descrição curso js");
+        curso2.setTitulo("Princípios do Desenvolvimento de Software");
+        curso2.setDescricao("Cursos introdutórios, sobre os desafios, Set up GitHub");
         curso2.setCargaHoraria(4);
 
         Mentoria mentoria = new Mentoria();
@@ -27,22 +27,22 @@ public class Main {
         System.out.println(mentoria);*/
 
         Bootcamp bootcamp = new Bootcamp();
-        bootcamp.setNome("Bootcamp Java Developer");
-        bootcamp.setDescricao("Descrição Bootcamp Java Developer");
+        bootcamp.setNome("Potência Tech powered by Ifood");
+        bootcamp.setDescricao("Java Beginners");
         bootcamp.getConteudos().add(curso1);
         bootcamp.getConteudos().add(curso2);
         bootcamp.getConteudos().add(mentoria);
 
-        Dev devCamila = new Dev();
-        devCamila.setNome("Camila");
-        devCamila.inscreverBootcamp(bootcamp);
-        System.out.println("Conteúdos Inscritos Camila:" + devCamila.getConteudosInscritos());
-        devCamila.progredir();
-        devCamila.progredir();
+        Dev devBruna = new Dev();
+        devBruna.setNome("Bruna Quinto Marsiaj");
+        devBruna.inscreverBootcamp(bootcamp);
+        System.out.println("Conteúdos Inscritos Bruna:" + devBruna.getConteudosInscritos());
+        devBruna.progredir();
+        devBruna.progredir();
         System.out.println("-");
-        System.out.println("Conteúdos Inscritos Camila:" + devCamila.getConteudosInscritos());
-        System.out.println("Conteúdos Concluídos Camila:" + devCamila.getConteudosConcluidos());
-        System.out.println("XP:" + devCamila.calcularTotalXp());
+        System.out.println("Conteúdos Inscritos Bruna:" + devBruna.getConteudosInscritos());
+        System.out.println("Conteúdos Concluídos Bruna:" + devBruna.getConteudosConcluidos());
+        System.out.println("XP:" + devBruna.calcularTotalXp());
 
         System.out.println("-------");
 
