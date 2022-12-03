@@ -10,16 +10,19 @@ public class Main {
         Curso curso1 = new Curso();
         curso1.setTitulo("Prepare-se para a jornada");
         curso1.setDescricao("Onboarding");
-        curso1.setCargaHoraria(8);
+        curso1.setNomeProfessor("Denilson Bonatti entre outros");
+        curso1.setCargaHoraria(5);
 
         Curso curso2 = new Curso();
         curso2.setTitulo("Princípios do Desenvolvimento de Software");
         curso2.setDescricao("Cursos introdutórios, sobre os desafios, Set up GitHub");
-        curso2.setCargaHoraria(4);
+        curso2.setNomeProfessor("Juliana Mascarenhas entre outros");
+        curso2.setCargaHoraria(13);
 
         Mentoria mentoria = new Mentoria();
-        mentoria.setTitulo("mentoria de java");
-        mentoria.setDescricao("descrição mentoria java");
+        mentoria.setTitulo("Dominando Programação Orientada a Objetos com Java - IFood");
+        mentoria.setDescricao("teoria e prática");
+        mentoria.setNomeProfessor("Camila Cavalcante");
         mentoria.setData(LocalDate.now());
 
         /*System.out.println(curso1);
